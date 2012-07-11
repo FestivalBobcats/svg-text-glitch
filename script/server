@@ -1,0 +1,2 @@
+#!/bin/sh
+ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => File.expand_path('../', __FILE__)); trap('INT') { s.shutdown }; s.start"
