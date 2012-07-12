@@ -5,7 +5,7 @@ $(function() {
 
   var charMap;
   $.ajaxSetup({ async: false });
-  $.getJSON( "/charmap.json", function(data) {
+  $.getJSON( "charmap.json", function(data) {
     charMap = data;
   });
   $.ajaxSetup({ async: true });
